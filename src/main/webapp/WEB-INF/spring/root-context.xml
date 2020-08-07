@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		<bean id="std" class="com.icia.board.bean.Student"></bean>
+		<!--bean태그로 등록하면 @Component 필요없이 타입(@Aitowired)이나 이름 (@Resoure(name ="emp")으로 di할수있다.
+		@Autowired는 타입으로 주입하지만 타입이 중복(상속시)되면 필드명과 bean태그의 id와 일치하는 빈을 주입한다.-->
+</beans>
